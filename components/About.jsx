@@ -12,9 +12,9 @@ const About = () => {
           </p>
           <h2 className='py-4 font-bold'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I specialize in building mobile responsive front-end UI applications. I’m passionate about learning new technologies and understand there is more than one way to accomplish a task. Though I am most proficient
+            I specialize in building mobile responsive front-end UI applications. I&#39;m passionate about learning new technologies and understand there is more than one way to accomplish a task. Though I am most proficient
             in building front-end applications using HTML, CSS, Javascript, and
-            React, I have my Bachelor's degree in computer science with a focus on web development. 
+            React, I have my Bachelor&#39;s degree in computer science with a focus on web development. 
           </p>
           <p className='py-2 text-gray-600'>
          I am a quick learner and can pick up new tech stacks as
