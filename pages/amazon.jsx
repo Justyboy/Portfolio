@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import React from 'react';
-import amazonImg from '../public/assets/projects/amazon.png';
-import { RiRadioButtonFill } from 'react-icons/ri';
-import Link from 'next/link';
+import Image from "next/image"
+import React from "react"
+import amazonImg from "../public/assets/projects/amazon.png"
+import { RiRadioButtonFill } from "react-icons/ri"
+import Link from "next/link"
 
 const Amazon = () => {
   return (
@@ -29,11 +29,11 @@ const Amazon = () => {
           <p>
             I built this application in React JS and is hosted on GitHub pages.
             This app features user authentication with firebase as well as the
-            firestore cloud storage database. 
+            firestore cloud storage database.
           </p>
-       
+
           <a
-            href='https://clone-cecd6.web.app/'
+            href='https://amazon20-theta.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >
@@ -53,7 +53,6 @@ const Amazon = () => {
               <p className='text-gray-600 py-2 flex items-center'>
                 <RiRadioButtonFill className='pr-1' /> Firebase
               </p>
-           
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ const Amazon = () => {
         </Link>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Amazon;
+export default Amazon
