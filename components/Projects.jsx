@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import React from "react"
 import starpilImg from "../public/assets/projects/starpil.png"
-import althyImg from "../public/assets/projects/althy.png"
+
 import amazonImg from "../public/assets/projects/amazon.png"
 import telsaImg from "../public/assets/projects/telsa.png"
 import airbnbImg from "../public/assets/projects/airbnb.png"
