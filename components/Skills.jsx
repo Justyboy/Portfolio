@@ -1,20 +1,20 @@
-import Image from 'next/image';
-import React from 'react';
-import Html from '../public/assets/skills/html.png';
-import Css from '../public/assets/skills/css.png';
-import Javascript from '../public/assets/skills/javascript.png';
-import ReactImg from '../public/assets/skills/react.png';
-import Tailwind from '../public/assets/skills/tailwind.png';
-import Github from '../public/assets/skills/github1.png';
-import Firebase from '../public/assets/skills/firebase.png';
-import NextJS from '../public/assets/skills/nextjs.png'
-import AWS from '../public/assets/skills/aws.png';
+import Image from "next/image"
+import React from "react"
+import Html from "../public/assets/skills/html.png"
+import Css from "../public/assets/skills/css.png"
+import Javascript from "../public/assets/skills/javascript.png"
+import ReactImg from "../public/assets/skills/react.png"
+import Tailwind from "../public/assets/skills/tailwind.png"
+import Github from "../public/assets/skills/github1.png"
+import Firebase from "../public/assets/skills/firebase.png"
+import NextJS from "../public/assets/skills/nextjs.png"
+import AWS from "../public/assets/skills/aws.png"
 
 const Skills = () => {
   return (
     <div id='skills' className='w-full lg:h-3/4 p-2'>
       <div className='max-w-[1240px] py-20 sm:px-10 px-2 mx-auto flex flex-col justify-center h-full'>
-        <p className='text-xl font-bold tracking-widest uppercase text-[#5651e5]'>
+        <p className='text-xl font-bold tracking-widest uppercase text-[#004bb0]'>
           Skills
         </p>
         <h2 className='py-4'>What I Can Do</h2>
@@ -102,7 +102,7 @@ const Skills = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Skills;
+export default Skills

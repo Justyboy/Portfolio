@@ -1,18 +1,17 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import React, { useState } from 'react';
-import { AiOutlineMail } from 'react-icons/ai';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
-import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import ContactImg from '../public/assets/contact.jpg';
-
+import Image from "next/image"
+import Link from "next/link"
+import React, { useState } from "react"
+import { AiOutlineMail } from "react-icons/ai"
+import { BsFillPersonLinesFill } from "react-icons/bs"
+import { FaGithub, FaLinkedinIn } from "react-icons/fa"
+import { HiOutlineChevronDoubleUp } from "react-icons/hi"
+import ContactImg from "../public/assets/contact.jpg"
 
 const Contact = () => {
   return (
     <div id='contact' className='w-full lg:h-screen'>
       <div className='max-w-[1240px] m-auto px-8 sm:px-10 py-16 w-full '>
-        <p className='text-xl font-bold tracking-widest uppercase text-[#5651e5]'>
+        <p className='text-xl font-bold tracking-widest uppercase text-[#004bb0]'>
           Contact
         </p>
         <h2 className='py-4'>Get In Touch</h2>
@@ -60,12 +59,12 @@ const Contact = () => {
                   <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
                     <AiOutlineMail />
                   </div>
-              
-            <a href='/myResume.pdf' target="_blank">
-              <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-                <BsFillPersonLinesFill />
-              </div>  
-              </a>
+
+                  <a href='/myResume.pdf' target='_blank'>
+                    <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+                      <BsFillPersonLinesFill />
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -143,9 +142,8 @@ const Contact = () => {
           </Link>
         </div>
       </div>
-      
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
