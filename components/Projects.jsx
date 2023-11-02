@@ -24,7 +24,6 @@ const Projects = () => {
             projectUrl='/starpil'
             tech='Shopify'
           />
-
           <ProjectItem
             title='Amazon Clone'
             backgroundImg={amazonImg}
