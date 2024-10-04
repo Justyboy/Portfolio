@@ -32,8 +32,14 @@ const About = () => {
           </a>
         </div>
 
-        <div className="w-1/2 h-auto m-auto shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
-          <Image src={AboutImg} className="rounded-xl w-1/2" alt="/" />
+        <div className="w-[50%] h-auto m-auto shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+          <Image
+            src={AboutImg}
+            className="rounded-xl"
+            width="100"
+            height="75"
+            alt="picture of me"
+          />
         </div>
       </div>
     </div>
