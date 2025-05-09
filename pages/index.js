@@ -1,25 +1,68 @@
-import Head from 'next/head'
-import About from '../components/About'
-import Contact from '../components/Contact'
-import Main from '../components/Main'
-import Projects from '../components/Projects'
-import Skills from '../components/Skills'
-
+import Head from "next/head";
+import About from "../components/About";
+import Contact from "../components/Contact";
+import Main from "../components/Main";
+import Projects from "../components/Projects";
+import Skills from "../components/Skills";
+import AnimatedSection from "../components/AnimatedSection";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
-    <div>
+    <div className="overflow-hidden-fix">
       <Head>
         <title>Justin Lovett | Front-End Developer</title>
-        <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
+        <meta
+          name="description"
+          content="I'm a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+        />
         <link rel="icon" href="/fav.png" />
       </Head>
-    <Main />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-   
+
+      {/* We don't animate the main section for immediate visibility */}
+      <Main />
+
+      {isMounted && (
+        <>
+          <AnimatedSection
+            animation="slide-in-left"
+            threshold={0.1}
+            delay={200}
+          >
+            <About />
+          </AnimatedSection>
+
+          <AnimatedSection
+            animation="slide-in-right"
+            threshold={0.1}
+            delay={200}
+          >
+            <Skills />
+          </AnimatedSection>
+
+          <AnimatedSection
+            animation="slide-in-left"
+            threshold={0.1}
+            delay={200}
+          >
+            <Projects />
+          </AnimatedSection>
+
+          <AnimatedSection
+            animation="slide-in-bottom"
+            threshold={0.1}
+            delay={200}
+          >
+            <Contact />
+          </AnimatedSection>
+        </>
+      )}
     </div>
-  )
+  );
 }

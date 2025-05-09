@@ -32,8 +32,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-28 shadow-xl z-[100] ease-in-out duration-300"
+          : "fixed w-full h-28 z-[100]"
       }
     >
       <div className="flex border-2 shadow-1 justify-between items-center w-full h-full px-8 pt-1 2xl:px-16">
@@ -42,8 +42,8 @@ const Navbar = () => {
             <Image
               src={NavLogo}
               alt="/"
-              width="100"
-              height="75"
+              width="400"
+              height="300"
               className="cursor-pointer"
               objectFit="contain"
             />
@@ -51,20 +51,35 @@ const Navbar = () => {
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/">Home</Link>
+            <li className="ml-10 text-sm uppercase relative group">
+              <Link href="/">
+                <a className="tracking-widest">Home</a>
+              </Link>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#about">About</Link>
+            <li className="ml-10 text-sm uppercase relative group">
+              <Link href="/#about">
+                <a className="tracking-widest">About</a>
+              </Link>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#skills">Skills</Link>
+            <li className="ml-10 text-sm uppercase relative group">
+              <Link href="/#skills">
+                <a className="tracking-widest">Skills</a>
+              </Link>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="/#projects">Projects</Link>
+            <li className="ml-10 text-sm uppercase relative group">
+              <Link href="/#projects">
+                <a className="tracking-widest">Projects</a>
+              </Link>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
             </li>
-            <li className="ml-10 text-sm uppercase hover:border-b">
-              <Link href="../public/assets/nav-logo.png">Contact</Link>
+            <li className="ml-10 text-sm uppercase relative group">
+              <Link href="/#contact">
+                <a className="tracking-widest">Contact</a>
+              </Link>
+              <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
             </li>
           </ul>
           {/* Hamburger Icon */}
@@ -99,8 +114,8 @@ const Navbar = () => {
                 <a>
                   <Image
                     src={NavLogo}
-                    width="87"
-                    height="35"
+                    width="320"
+                    height="128"
                     alt="/"
                     objectFit="contain"
                   />
@@ -122,33 +137,57 @@ const Navbar = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Home
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">Home</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  About
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">About</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Skills
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">Skills</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Projects
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">Projects</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
               <Link href="/myResume.pdf">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Resume
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">Resume</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
-                  Contact
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm relative group w-fit"
+                >
+                  <span className="tracking-widest">Contact</span>
+                  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-[#004bb0] group-hover:w-full transition-all duration-300"></span>
                 </li>
               </Link>
             </ul>

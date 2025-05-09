@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="w-full py-10 sm:py-2 px-8 sm:px-10 flex items-center "
     >
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-12">
         <div className="col-span-2">
           <p className="font-bold uppercase text-xl tracking-widest text-[#004bb0]">
             About
@@ -35,13 +35,15 @@ const About = () => {
           </a>
         </div>
 
-        <div className="w-[50%] h-auto m-auto shadow-2xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full md:w-[80%] h-[300px] md:h-[400px] relative m-auto shadow-2xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300 mt-8 md:mt-0">
           <Image
             src={AboutImg}
             className="rounded-xl"
-            width="auto"
-            height="200"
             alt="picture of me"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            style={{ objectFit: "cover" }}
+            priority
           />
         </div>
       </div>

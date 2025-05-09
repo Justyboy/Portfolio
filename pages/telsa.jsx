@@ -9,13 +9,17 @@ const Telsa = () => {
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
         <div className='absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10' />
-        <Image
-          className='absolute z-1'
-          layout='fill'
-          objectFit='cover'
-          src={telsaImg}
-          alt='/'
-        />
+        <div className='relative w-full h-[50vh]'>
+          <Image
+            className='absolute z-1'
+            src={telsaImg}
+            alt='/'
+            fill
+            sizes="100vw"
+            style={{ objectFit: 'cover' }}
+            priority
+          />
+        </div>
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
           <h2 className='py-2'>telsa UI</h2>
           <h3>Next JS / Tailwind / Next Auth</h3>
