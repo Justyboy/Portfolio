@@ -40,10 +40,15 @@ const AnimatedSection = ({
   }, [threshold]);
 
   // Define animation styles directly
-  let animationStyle = {};
+  let animationStyle = {
+    // Add these properties to ensure scrolling works on mobile
+    touchAction: "pan-x pan-y",
+    willChange: "opacity, transform",
+  };
 
   if (isVisible) {
     animationStyle = {
+      ...animationStyle,
       opacity: 1,
       transform: "translateX(0) translateY(0)",
       transition: `opacity 0.8s ease-out ${delay}ms, transform 0.8s ease-out ${delay}ms`,
@@ -59,21 +64,25 @@ const AnimatedSection = ({
   } else {
     if (animation === "slide-in-left") {
       animationStyle = {
+        ...animationStyle,
         opacity: 0,
         transform: "translateX(-200px)",
       };
     } else if (animation === "slide-in-right") {
       animationStyle = {
+        ...animationStyle,
         opacity: 0,
         transform: "translateX(200px)",
       };
     } else if (animation === "slide-in-bottom") {
       animationStyle = {
+        ...animationStyle,
         opacity: 0,
         transform: "translateY(200px)",
       };
     } else if (animation === "fade-in") {
       animationStyle = {
+        ...animationStyle,
         opacity: 0,
       };
     }
@@ -83,9 +92,7 @@ const AnimatedSection = ({
     <div
       ref={sectionRef}
       className={`${className}`}
-      style={{
-        ...animationStyle,
-      }}
+      style={animationStyle}
       id={id}
     >
       {children}
