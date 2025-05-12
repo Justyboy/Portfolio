@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="w-full py-10 sm:py-2 px-8 sm:px-10 flex items-center"
+      className="w-full py-10 sm:py-2 px-8 sm:px-10 flex items-center sm:mb-16"
     >
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-12">
         <div className="col-span-2">
@@ -35,13 +35,13 @@ const About = () => {
           </a>
         </div>
 
-        <div className="w-full h-[200px] sm:h-[250px] md:w-[80%] md:h-[400px] relative m-auto shadow-2xl shadow-gray-400 rounded-xl p-4 hover:scale-105 ease-in duration-300 mt-8 md:mt-0">
+        <div className="rounded-xl p-4 hover:scale-105 ease-in duration-300 mt-8 md:mt-0 mb-16 sm:mb-0">
           <Image
             src={AboutImg}
             className="rounded-xl"
             alt="picture of me"
             fill
-            sizes="(max-width: 640px) 90vw, (max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 768px) 40vw, (max-width: 1200px) 30vw, 20vw"
             style={{ objectFit: "cover" }}
             priority
           />

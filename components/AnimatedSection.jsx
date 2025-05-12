@@ -41,9 +41,10 @@ const AnimatedSection = ({
 
   // Define animation styles directly
   let animationStyle = {
-    // Add these properties to ensure scrolling works on mobile
-    touchAction: "pan-x pan-y",
-    willChange: "opacity, transform",
+    touchAction: "auto", // Ensure touch events pass through
+    WebkitOverflowScrolling: "touch", // Improve mobile scrolling
+    position: "relative", // Ensure it doesn't break the document flow
+    zIndex: 1, // Ensure proper stacking
   };
 
   if (isVisible) {
@@ -66,19 +67,19 @@ const AnimatedSection = ({
       animationStyle = {
         ...animationStyle,
         opacity: 0,
-        transform: "translateX(-200px)",
+        transform: "translateX(-100px)", // Reduced from -200px
       };
     } else if (animation === "slide-in-right") {
       animationStyle = {
         ...animationStyle,
         opacity: 0,
-        transform: "translateX(200px)",
+        transform: "translateX(100px)", // Reduced from 200px
       };
     } else if (animation === "slide-in-bottom") {
       animationStyle = {
         ...animationStyle,
         opacity: 0,
-        transform: "translateY(200px)",
+        transform: "translateY(100px)", // Reduced from 200px
       };
     } else if (animation === "fade-in") {
       animationStyle = {
