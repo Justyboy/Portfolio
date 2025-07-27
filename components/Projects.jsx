@@ -3,8 +3,8 @@ import Link from "next/link";
 import React from "react";
 import starpilImg from "../public/assets/projects/starpil.png";
 
-import amazonImg from "../public/assets/projects/amazon.png";
-import telsaImg from "../public/assets/projects/telsa.png";
+import mrImg from "../public/assets/projects/mr.png";
+
 import wwImg from "../public/assets/projects/ww.png";
 
 import ProjectItem from "./ProjectItem";
@@ -25,9 +25,9 @@ const Projects = () => {
             tech="Shopify"
           />
           <ProjectItem
-            title="Amazon Clone"
-            backgroundImg={amazonImg}
-            projectUrl="/amazon"
+            title="Mama Rosa's"
+            backgroundImg={mrImg}
+            projectUrl="/mr"
             tech="React JS"
           />
 
