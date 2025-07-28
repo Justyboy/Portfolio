@@ -23,7 +23,7 @@ const Main = () => {
 
   return (
     <div id="home" className="w-full sm:h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full mx-auto p-2 flex justify-center items-start sm:items-center sm:h-full">
         <div className="py-10 mt-20">
           <p className="uppercase text-sm tracking-widest text-gray-600">
             LET&#39;S BUILD SOMETHING TOGETHER
