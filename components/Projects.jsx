@@ -34,7 +34,7 @@ const Projects = () => {
           <ProjectItem
             title="seaside"
             backgroundImg={seasideImg}
-            projectUrl="/ss"
+            projectUrl="/seaside"
             tech="React JS"
           />
 
