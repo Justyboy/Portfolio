@@ -4,8 +4,8 @@ import React from "react";
 import starpilImg from "../public/assets/projects/starpil.png";
 
 import mrImg from "../public/assets/projects/mr.png";
-
-import wwImg from "../public/assets/projects/ww.png";
+import seasideImg from "../public/assets/projects/seaside.png";
+import cryptoImg from "../public/assets/projects/crypto.png";
 
 import ProjectItem from "./ProjectItem";
 
@@ -32,9 +32,16 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="WanderWords"
-            backgroundImg={wwImg}
-            projectUrl="/ww"
+            title="seaside"
+            backgroundImg={seasideImg}
+            projectUrl="/ss"
+            tech="React JS"
+          />
+
+          <ProjectItem
+            title="crypto"
+            backgroundImg={cryptoImg}
+            projectUrl="/crypto"
             tech="React JS"
           />
         </div>

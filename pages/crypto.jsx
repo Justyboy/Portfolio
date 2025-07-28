@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ssImg from "../public/assets/projects/seaside.png";
+import cryptoImg from "../public/assets/projects/crypto.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
@@ -13,11 +13,11 @@ const WW = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={ssImg}
+          src={cryptoImg}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Seaside</h2>
+          <h2 className="py-2">Crypto Trade</h2>
           <h3>React JS / Tailwind / Typescript</h3>
         </div>
       </div>
@@ -27,11 +27,11 @@ const WW = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            Seaside Stay is a sleek and modern vacation booking website built
-            with React, Next.js, and TypeScript, with Supabase powering the
-            backend. It allows users to seamlessly browse beachfront properties,
-            view availability, and book their perfect getaway—all with a smooth,
-            responsive interface designed for an effortless experience.
+            Crypto Trade is a fast, secure, and user-friendly cryptocurrency
+            trading platform built with React, Next.js, TypeScript, and
+            Supabase. It allows users to track market trends, manage portfolios,
+            and simulate trades with real-time data—all through a sleek and
+            responsive interface designed for modern crypto enthusiasts.
           </p>
           {/* <a
             href="https://github.com/Justyboy/wanderwords"
@@ -41,7 +41,7 @@ const WW = () => {
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a> */}
           <a
-            href="https://modern-seaside-stay-2657.vercel.app/"
+            href="https://crypto-trade-template-5607.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
