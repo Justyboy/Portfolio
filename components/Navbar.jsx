@@ -32,7 +32,7 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-28 shadow-xl z-[100] ease-in-out duration-300"
+          ? "fixed w-full h-28 shadow-xl z-[100] "
           : "fixed w-full h-28 z-[100]"
       }
     >
